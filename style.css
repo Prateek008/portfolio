@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav .logo:hover {
+    color: #f39c12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+nav .links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav .links a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.container {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #e74c3c, #f39c12);
+    color: #fff;
+}
+
+.container .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .cols {
+    padding: 20px;
+    max-width: 800px;
+}
+
+.container .cols0 .topline {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.container .cols0 h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.container .cols0 p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.container .btns {
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.container .btns button,
+.container .btns a {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 5px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container .btns button:hover,
+.container .btns a:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-content h1::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #f39c12;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content .btns {
+    margin-top: 20px;
+}
+
+/* Skills Section */
+.skill {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.skill .title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.skill .title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #f39c12;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.skill .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill .course-col {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skill .course-col:hover {
+    transform: translateY(-10px);
+}
+
+.skill .course-col h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill .course-col p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Blog Section */
+.Blog {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.Blog h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.Blog h1::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #f39c12;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.Blog p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.comment-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comment-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #f39c12;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container .wrapper {
+        flex-direction: column;
+    }
+    
+    .about {
+        flex-direction: column;
+    }
+    
+    .about-content {
+        max-width: 100%;
+    }
+    
+    .skill .row {
+        flex-direction: column;
+    }
+    
+    .skill .course-col {
+        max-width: 100%;
+    }
+}
